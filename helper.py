@@ -5,8 +5,6 @@ labelEncoder = LabelEncoder()
 standartScaler = StandardScaler()
 minMaxScaler = MinMaxScaler()
 
-
-
 def get_table_download_link(df):
     """Generates a link allowing the data in a given panda dataframe to be downloaded
     in:  dataframe
