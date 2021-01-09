@@ -1,4 +1,7 @@
 # Reconn [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/mdsadabwasim/reconn/main.py)
+
+![Alt text](data/Reconn.png?raw=true)
+
 Web app to do Exploratory data analysis and data preprocessing.
 
 ## Pre-requisites
