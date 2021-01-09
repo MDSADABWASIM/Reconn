@@ -9,6 +9,11 @@ The project was developed using python 3.6.7 with the following packages.
 - Scikit-learn
 - Pandas-profiling
 - Streamlit
+- Matplotlib
+- Seaborn
+- Pillow
+- Plotly
+
 
 Installation with pip:
 
@@ -29,14 +34,11 @@ docker build --tag app:1.0 .
 docker run --publish 8051:8051 -it app:1.0
 ```
 ## Files
-- anime_reconmmendation_system.ipynb : Jupyter Notebook with all the workings including pre-processing, modelling and inference.
 - main.py : Streamlit App script
 - requirements.txt : pre-requiste libraries for the project
-- models/ : trained model files and scaler objects
-- data/ : source data
 
 ## Summary
-This repository acts as a guide to for end to end machine learning project deployment.
+This repository shows the codebase of a web based application Reconn for quick Exploratory data analysis and Data preprocessing.
 
 ## Acknowledgements
 
