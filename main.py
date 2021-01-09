@@ -25,7 +25,7 @@ def main():
         st.sidebar.title('Know your dataset')  
 
         if st.sidebar.checkbox("Preview Dataset"):
-            st.subheader('Dataset preview')
+            st.markdown('## Dataset preview')
             if st.button("Head"):
                 st.write(df.head(10))
             elif st.button("Tail"):
@@ -35,7 +35,7 @@ def main():
                 st.write(df.head(number))
         
         if st.sidebar.checkbox("Show Column Names"):
-            st.subheader('Column names')
+            st.markdown('## Column names')
             st.write(df.columns)
 
         if st.sidebar.checkbox("Show Dimensions"):
@@ -146,7 +146,7 @@ def main():
         st.sidebar.title('Data processing')
        
         if st.sidebar.checkbox('Treat missing values'):
-            st.subheader('Treat missing values')
+            st.markdown('## Treat missing values')
             # Select a column to treat missing values
             col_option = st.selectbox("Select Column to treat missing values", df.columns) 
 
@@ -171,7 +171,7 @@ def main():
                 st.write("No changes made")
 
         if st.sidebar.checkbox('Encode categorical column'):
-            st.subheader("Encode categorical column")
+            st.markdown("## Encode categorical column")
             # Select a column to do encoding
             col_selected = st.selectbox("Select Column to treat categorical values", df.columns) 
 
@@ -194,7 +194,7 @@ def main():
                 st.write('No values replaced yet')
 
         if st.sidebar.checkbox('Scale column'):
-            st.subheader("Scaling column")
+            st.markdown("## Scaling column")
             col_scaled = st.selectbox("Select Column for feature scaling", df.columns) 
 
             scaler_type = st.selectbox("Select Scaling method", ("Standard Scaler","Min Max Scaler"))
